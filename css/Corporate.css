@@ -128,7 +128,6 @@ img {
         font-size: 1.2rem;
     }
 }
-
 /* Start Footer */
 .footer {
   background-color: #000000;
@@ -140,28 +139,30 @@ img {
     text-align: center;
   }
 }
-.footer .container {
+.footer .containera {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: space-between;
+  align-items: center;
 }
-.footer .box h3 {
+.footer .boxa h3 {
   color: #024caa;
   font-size: 50px;
   margin: 0 0 20px;
 }
-.footer .box .social {
+.footer .boxa .social {
   display: flex;
   margin: 20px;
 }
 @media (max-width: 767px) {
-  .footer .box .social {
+  .footer .boxa .social {
     justify-content: center;
   }
 }
-.footer .box .social li {
+.footer .boxa .social li {
   margin-right: 10px;
 }
-.footer .box .social li a {
+.footer .boxa .social li a {
   background-color: #ffffff;
   color: #b9b9b9;
   display: inline-flex;
@@ -174,58 +175,62 @@ img {
   transition: var(--main-transition);
 }
 
-.footer .box .text {
+.footer .boxa .texta {
   line-height: 2;
   width: 218px;
   color: #ffffff;
   margin: 0px;
   font-size: 30px;
 }
-.footer .box .links li {
+.footer .boxa .link{
+  padding-left: 50px;
+  padding-right: 50px;
+  list-style: none;
+}
+.footer .boxa .link li {
   padding: 15px 0;
-
   transition: var(--main-transition);
 }
 
-.footer .box .links li:hover {
+.footer .boxa .link li:hover {
   padding-left: 10px;
 }
-.footer .box .links li:hover a {
+.footer .boxa .link li:hover a {
   color: #024caa;
 }
-.footer .box .links li a {
+.footer .boxa .link li a {
   color: #b9b9b9;
   text-decoration: none;
   transition: var(--main-transition);
 }
 
-.footer .box .line {
+.footer .boxa .linea {
   display: flex;
   align-items: center;
   color: #b9b9b9;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .footer .box .line {
+  .footer .boxa .linea {
     flex-direction: column;
   }
 }
-.footer .box .line i {
+.footer .boxa .linea i {
   font-size: 25px;
   color: #024caa;
   margin-right: 10px;
 }
 @media (max-width: 767px) {
-  .footer .box .line i {
+  .footer .boxa .linea i {
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
-.footer .box .line .info {
+.footer .boxa .linea .info {
   line-height: 1.7;
   flex: 1;
 }
-.footer .box .line .info span {
+.footer .boxa .linea .info span {
   display: block;
 }
 .footer .footer-gallery img {
